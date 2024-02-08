@@ -14,6 +14,7 @@ export const ptBR = {
 		text2: "Estou seguindo o stack do Typescript, com NextJS (o framework utilizado para este portfólio), NodeJS para APIs e React Native para desenvolvimento móvel nativo. Mesmo possuindo esse conhecimento, estou sempre buscando mais e mais, aprimorando minhas habilidades de clean code, arquitetura, tecnologias, frameworks, metodologias e habilidades interpessoais, buscando me tornar um desenvolvedor inteligente tanto nas soft skills quanto nas hard skills, capaz de trabalhar em equipes e, futuramente, liderá-las.",
 	},
 	cards: {
+		title: "Serviços",
 		next: {
 			title: "Desenvolvimento Web Responsivo com Next.js",
 			desc: "Crio websites responsivos e intuitivos com Next.js e Tailwind CSS para uma experiência de usuário excepcional.",
@@ -23,7 +24,7 @@ export const ptBR = {
 			desc: "Construo APIs robustas e seguras em Node.js para garantir comunicação eficiente entre diferentes partes de um sistema.",
 		},
 		native: {
-			title: "Desenvolvimento de Aplicações Nativas com React Native",
+			title: "Desenvolvimento de Aplicatições com React Native",
 			desc: "Desenvolvo aplicativos nativos com React Native, combinando performance excepcional com uma interface intuitiva e conectividade de ponta.",
 		},
 	},

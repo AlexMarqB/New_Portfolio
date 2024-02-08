@@ -1,9 +1,12 @@
 "use client";
-import { SocialButton } from "@/components/buttons";
 import { ServiceCards } from "@/components/serviceCards";
 import { Locale } from "@/config/i18n.config";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionaries-use-client";
 import { useParams } from "next/navigation";
+import Image from "next/image";
+
+import git from '../../../public/github.svg'
+import linke from '../../../public/linkedin.svg'
 
 export default function Home() {
 	const params = useParams<{ lang: Locale }>();
@@ -20,28 +23,54 @@ export default function Home() {
 					/>
 					<div className="flex flex-col md:text-xl lg:text-2xl">
 						<h1>
-							Console.log(
-							<span className="text-orange-500">"Hello World"</span>)
+							console.log(
+							<span className="text-orange-500">
+								"Hello World,{" "}
+								{params.lang === "en-US" ? "I am a" : "eu sou um"}"
+							</span>
+							)
 						</h1>
 						<h2>{dict.about.role}</h2>
-						<SocialButton social="github" />
+						<div className="flex gap-6 mt-2">
+							<button className="w-fit h-10" onClick={() => window.open("https://github.com/AlexMarqB")}><Image src={git} alt="Github icon" style={{ width: "100%", height: "100%" }}/></button>
+							<button className="w-fit h-10" onClick={() => window.open("https://www.linkedin.com/in/alex-marques-87050726a/")}><Image src={linke} alt="Linkedin icon" style={{ width: "100%", height: "100%" }}/></button>
+						</div>
 					</div>
-					<div></div>
 				</div>
 			</section>
-			<section
-				id="about"
-				className="flex items-center w-full bg-purple-400 justify-around"
-			>
-				<h1>{dict.about.title}</h1>
-				<p>{dict.about.text1}</p>
-				<br />
-				<p>{dict.about.text2}</p>
+			<section id="about" className="flex w-fit items-center justify-around">
+				<div className="flex flex-col w-2/3 items-start">
+					<h1 className="text-orange-500 font-bold text-xl">
+						{dict.about.title}
+					</h1>
+					<p>{dict.about.text1}</p>
+					<br />
+					<p>{dict.about.text2}</p>
+				</div>
 			</section>
 			<section className="flex justify-around" id="services">
-				<ServiceCards title={dict.cards.next.title} desc={dict.cards.next.desc} />
-				<ServiceCards title={dict.cards.node.title} desc={dict.cards.node.desc} />
-				<ServiceCards title={dict.cards.native.title} desc={dict.cards.native.desc} />
+				<div className="flex flex-col gap-y-4 w-2/3">
+					<h1 className="text-orange-500 font-bold text-xl">
+						{dict.cards.title}
+					</h1>
+					<div className="flex flex-col items-center xl:flex-row gap-y-6 justify-around">
+						<ServiceCards
+							title={dict.cards.next.title}
+							desc={dict.cards.next.desc}
+							index={"01"}
+						/>
+						<ServiceCards
+							title={dict.cards.node.title}
+							desc={dict.cards.node.desc}
+							index={"02"}
+						/>
+						<ServiceCards
+							title={dict.cards.native.title}
+							desc={dict.cards.native.desc}
+							index={"03"}
+						/>
+					</div>
+				</div>
 			</section>
 			<section id="projects"></section>
 			<section id="contact"></section>

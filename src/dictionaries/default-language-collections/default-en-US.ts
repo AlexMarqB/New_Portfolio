@@ -10,10 +10,11 @@ export const enUS = {
 	about: {
 		role: "Fullstack Developer",
 		title: "About me",
-		text1: "Welcome to my portfolio! Firstly, I have confidence in saying that I'm a web developer who is striving to become as comprehensive as possible. I'm following the Typescript stack, with NextJS (the framework used for this portfolio), NodeJS for APIs, and React Native for native mobile development.",
+		text1: "Welcome to my portfolio! First and foremost, I'm confident in stating that I'm a web developer striving to become as comprehensive as possible.",
 		text2: "Even though I possess such knowledge, I'm always seeking more and more, improving my clean code skills, architecture, technologies, frameworks, methodologies, and interpersonal skills, aiming to become an intelligent developer with both soft and hard skills capable of working in teams and eventually leading them."
 	},
 	cards: {
+		title: "Services",
 		next: {
 			title: "Responsive Web Development with Next.js",
 			desc: "I create responsive and intuitive websites using Next.js and Tailwind CSS for an exceptional user experience."

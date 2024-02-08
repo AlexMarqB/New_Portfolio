@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang={params.lang}>
-			<body className={inter.className}>
+			<body className={`${inter.className} bg-gray-100 text-gray-200`}>
         <Header lang={params.lang} />
         <main>{children}</main>
       </body>
