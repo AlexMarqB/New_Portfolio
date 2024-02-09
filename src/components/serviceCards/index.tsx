@@ -1,10 +1,9 @@
 interface CardProps {
 	title: string;
 	desc: string;
-	index: string;
 }
 
-export function ServiceCards({ desc, title, index }: CardProps) {
+export function ServiceCards({ desc, title }: CardProps) {
 	return (
 		<div className="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
 			<svg
