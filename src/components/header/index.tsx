@@ -11,7 +11,7 @@ export function Header({ lang }: { lang: Locale }) {
 	const dict = getDictionaryServerOnly(lang);
 
 	return (
-		<header className="flex w-full px-4 py-3 items-center justify-between text-base md:text-lg lg:text-xl">
+		<header className="flex w-full px-4 py-3 items-center justify-between text-base md:text-lg lg:text-xl shadow-md">
 			<div className="flex items-center">
 				<ChevronLeft />
 				Alex Marques.{dict.header.title}
