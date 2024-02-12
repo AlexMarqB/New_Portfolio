@@ -69,6 +69,8 @@ export default function Home() {
 						src={"/Alex.jpeg"}
 						alt="Profile Picture"
 						className="flex rounded-full w-3/12 xl:w-2/12"
+						width={200}
+						height={200}
 					/>
 					<div className="flex flex-col text-lg md:text-xl lg:text-2xl">
 						<h1>
