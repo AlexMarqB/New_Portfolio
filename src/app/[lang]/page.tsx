@@ -65,7 +65,7 @@ export default function Home() {
 		<div className="flex flex-col w-full min-h-screen text-black">
 			<section className="flex justify-around">
 				<div className=" w-full lg:w-2/3 flex items-center gap-6">
-					<img
+					<Image
 						src={"/Alex.jpeg"}
 						alt="Profile Picture"
 						className="flex rounded-full w-3/12 xl:w-2/12"
@@ -74,11 +74,11 @@ export default function Home() {
 						<h1>
 							console.log(
 							<span className="text-orange-500">
-								"Hello World,{" "}
-								{dict.about.present}"
+								&quot;Hello World, {dict.about.present}&quot;
 							</span>
 							)
 						</h1>
+
 						<h2>{dict.about.role}</h2>
 						<div className="flex gap-6 mt-2">
 							<button
