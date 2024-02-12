@@ -11,6 +11,7 @@ import { ProjectCards } from "@/components/projectCards";
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { TextInput, Textarea } from "@/components/inputs";
+import { toast } from "react-toastify";
 
 export default function Home() {
 	const params = useParams<{ lang: Locale }>();
@@ -40,19 +41,20 @@ export default function Home() {
 
 			emailjs
 				.send(
-					"service_dqrmprs",
-					"template_7y2t63d",
+					process.env.NEXT_PUBLIC_SERVICE_ID!,
+					process.env.NEXT_PUBLIC_TEMPLATE_ID!,
 					formData,
-					"i2EzdfotfhOsV8WZh"
+					process.env.NEXT_PUBLIC_PUBLIC_KEY!
 				)
 				.then(
 					() => {
-						console.log("SUCCESS!");
+						toast.success(dict.contact.stoast);
 						setName("");
 						setEmail("");
 						setMessage("");
 					},
 					(error) => {
+						toast.error(dict.contact.ftoast);
 						console.log("FAILED...", error.text);
 					}
 				);
@@ -73,7 +75,7 @@ export default function Home() {
 							console.log(
 							<span className="text-orange-500">
 								"Hello World,{" "}
-								{params.lang === "en-US" ? "I am a" : "eu sou um"}"
+								{dict.about.present}"
 							</span>
 							)
 						</h1>
@@ -145,11 +147,11 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="flex justify-around" id="projects">
-				<div className="flex flex-col gap-y-4 w-2/3">
+				<div className="flex flex-col items gap-y-4 w-2/3">
 					<h1 className="text-orange-500 font-bold text-xl mb-6">
 						{dict.projects.title}
 					</h1>
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
+					<div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
 						<ProjectCards
 							title={dict.projects.pizza.title}
 							desc={dict.projects.pizza.desc}
@@ -168,33 +170,31 @@ export default function Home() {
 						e.preventDefault();
 						handleSubmit();
 					}}
-					className="w-2/3 h-auto flex flex-col items-center gap-y-6"
+					className="w-full lg:w-2/3 h-auto flex flex-col items-center gap-y-6"
 				>
 					<h1 className="text-orange-500 font-bold text-xl mb-6 self-start">
-						{params.lang === "en-US" ? "Contact" : "Entre em contato"}
+						{dict.contact.title}
 					</h1>
 					<TextInput
 						input_type="text"
 						value={name}
 						OnChange={(value) => setName(value)}
-						name={params.lang === "en-US" ? "name" : "nome"}
+						name={dict.contact.labels.op1}
 					/>
 					<TextInput
 						input_type="email"
 						value={email}
 						OnChange={(value) => setEmail(value)}
-						name="email"
+						name="Email"
 					/>
 					<Textarea
 						value={message}
-						name={params.lang === "en-US" ? "message" : "mensagem"}
+						name={dict.contact.labels.op2}
 						OnChange={(value) => setMessage(value)}
 					/>
 					{error && (
-						<span className="text-red-100 absolute">
-							{params.lang === "en-US"
-								? "Fill in all fields"
-								: "Preencha todos os campos"}
+						<span className="text-red-100 relative">
+							{dict.contact.labels.error}
 						</span>
 					)}
 					<button
@@ -239,7 +239,7 @@ export default function Home() {
 								</svg>
 							</span>
 							<span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-300">
-								{params.lang === "en-US" ? "Send" : "Enviar"}
+								{dict.contact.labels.button}
 							</span>
 						</div>
 					</button>

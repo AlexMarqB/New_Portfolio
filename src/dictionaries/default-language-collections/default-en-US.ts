@@ -9,6 +9,7 @@ export const enUS = {
 	},
 	about: {
 		role: "Fullstack Developer",
+		present: "I am a",
 		title: "About me",
 		text1: "Welcome to my portfolio! First and foremost, I'm confident in stating that I'm a web developer striving to become as comprehensive as possible.",
 		text2: "Even though I possess such knowledge, I'm always seeking more and more, improving my clean code skills, architecture, technologies, frameworks, methodologies, and interpersonal skills, aiming to become an intelligent developer with both soft and hard skills capable of working in teams and eventually leading them."
@@ -38,6 +39,17 @@ export const enUS = {
 			title: "Pizzeria system",
 			desc: "Simulating a pizzeria system to learn more about APIs and their connections to the frontend."
 		}
+	  },
+	  contact: {
+		title: "Contact",
+		stoast: "Email sent successfully",
+		ftoast: "Error sending email",
+		labels: {
+			op1: "Name",
+			op2: "Message",
+			error: "Fill in all fields",
+			button: "Send"
+				}
 	  }
 	  
 };

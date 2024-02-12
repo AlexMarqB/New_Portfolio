@@ -13,7 +13,7 @@ export function TextInput({
 }: TextInputProps) {
 	return (
 		<div className="flex w-full items-center justify-center">
-			<div className="relative w-1/3">
+			<div className="relative w-full lg:w-1/3">
 				<input
 					id={name}
 					name={name}
@@ -24,9 +24,11 @@ export function TextInput({
 				/>
 				<label
 					htmlFor={name}
-					className={`absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:-top-4 ${
-						value != "" && "text-xs -top-4 text-orange-500"
-					} transition-all peer-focus:text-orange-500`}
+					className={`absolute left-0 cursor-text  ${
+						value != ""
+							? "text-xs -top-4 text-orange-500"
+							: "top-1 peer-focus:text-xs peer-focus:-top-4 transition-all peer-focus:text-orange-500"
+					} `}
 				>
 					{name}
 				</label>
@@ -41,14 +43,10 @@ type TextareaProps = {
 	OnChange: (value: string) => void;
 };
 
-export function Textarea({
-	name,
-	value,
-	OnChange,
-}: TextareaProps) {
+export function Textarea({ name, value, OnChange }: TextareaProps) {
 	return (
 		<div className="flex w-full h-auto items-center mt-3 justify-center">
-			<div className="relative w-1/3">
+			<div className="relative w-full lg:w-1/3">
 				<textarea
 					id={name}
 					name={name}
@@ -58,9 +56,11 @@ export function Textarea({
 				/>
 				<label
 					htmlFor={name}
-					className={`absolute left-2 top-2 cursor-text peer-focus:text-xs peer-focus:-top-5 peer-focus:left-0 ${
-						value !== "" && "text-xs -top-5 -left-0 text-orange-500"
-					} transition-all peer-focus:text-orange-500`}
+					className={`absolute  cursor-text  ${
+						value != ""
+							? "text-xs left-1 -top-5 text-orange-500"
+							: "left-2 top-1 peer-focus:text-xs peer-focus:-top-5 peer-focus:left-1 transition-all peer-focus:text-orange-500"
+					} `}
 				>
 					{name}
 				</label>

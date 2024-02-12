@@ -34,8 +34,6 @@ export function ProjectCards({
 	mlink,
 	icons,
 }: CardProps) {
-	const techs = ["nodejs", "nextjs", "typescript"];
-
 	return (
 		<div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-300 shadow-md">
 			<div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-gray-100 shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-orange-400 to-orange-500">
@@ -53,11 +51,9 @@ export function ProjectCards({
 			</div>
 			{icons.length > 0 && (
 				<div className="flex w-full p-4 pt-0 gap-2 text-orange-500 text-2xl">
-					{techs.map((item, index) => (
+					{icons.map((item, index) => (
 						<div
 							key={index}
-							title="Backend repository"
-							onClick={() => window.open(brepo)}
 							className="select-none rounded-lg border border-orange-500 w-fit h-fit p-1 text-center text-orange-500 align-middle items-center font-sans text-sm font-medium uppercase shadow-md shadow-blue-500/20 "
 						>
 							{item}
