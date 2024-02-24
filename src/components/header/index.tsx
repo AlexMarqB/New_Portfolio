@@ -27,30 +27,30 @@ export function Header({ lang }: { lang: Locale }) {
 		<header className="flex w-full px-4 py-3 items-center justify-between text-base md:text-lg lg:text-xl shadow-md">
 			<div className="flex items-center text-gray-300 dark:text-gray-100">
 				<ChevronLeft />
-				Alex Marques.{dict.header.title}
+				Alex Marques<span className="hidden min-[500px]:block">.{dict.header.title}</span>
 				<ChevronRight />
 			</div>
 			<div className="flex gap-x-3">
 				<button
-					className="hidden lg:block hover:scale-105 hover:text-gray-300 dark:text-gray-100 hover:font-semibold duration-150"
+					className="hidden min-[1000px]:block hover:scale-105 hover:text-gray-300 dark:text-gray-100 hover:font-semibold duration-150"
 					onClick={(e) => scrollToAnchor(e, "#about")}
 				>
 					{dict.header.op1}
 				</button>
 				<button
-					className="hidden lg:block hover:scale-105 hover:text-gray-300 dark:text-gray-100 hover:font-semibold duration-150"
+					className="hidden min-[1000px]:block hover:scale-105 hover:text-gray-300 dark:text-gray-100 hover:font-semibold duration-150"
 					onClick={(e) => scrollToAnchor(e, "#services")}
 				>
 					{dict.header.op2}
 				</button>
 				<button
-					className="hidden lg:block hover:scale-105 hover:text-gray-300 dark:text-gray-100 hover:font-semibold duration-150"
+					className="hidden min-[1000px]:block hover:scale-105 hover:text-gray-300 dark:text-gray-100 hover:font-semibold duration-150"
 					onClick={(e) => scrollToAnchor(e, "#projects")}
 				>
 					{dict.header.op3}
 				</button>
 				<button
-					className="hidden lg:block hover:scale-105 hover:text-gray-300 dark:text-gray-100 hover:font-semibold duration-150"
+					className="hidden min-[1000px]:block hover:scale-105 hover:text-gray-300 dark:text-gray-100 hover:font-semibold duration-150"
 					onClick={(e) => scrollToAnchor(e, "#contact")}
 				>
 					{dict.header.op4}

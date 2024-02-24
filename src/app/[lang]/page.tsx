@@ -117,7 +117,7 @@ export default function Home() {
 					<h1 className="self-start text-orange-500 dark:text-[#FFA500] font-bold text-xl mb-6">
 						{dict.services.title}
 					</h1>
-					<div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
+					<div className="flex flex-col min-[910px]:grid min-[910px]:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
 						<ServiceCards
 							title={dict.services.next.title}
 							desc={dict.services.next.desc}
@@ -142,7 +142,7 @@ export default function Home() {
 					<h1 className="self-start text-orange-500 dark:text-[#FFA500] font-bold text-xl mb-6">
 						{dict.projects.title}
 					</h1>
-					<div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
+					<div className="flex flex-col min-[910px]:grid min-[910px]:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
 						<ProjectCards
 							title={dict.projects.pizza.title}
 							desc={dict.projects.pizza.desc}
@@ -161,7 +161,7 @@ export default function Home() {
 						e.preventDefault();
 						handleSubmit();
 					}}
-					className="w-full lg:w-2/3 h-auto flex flex-col items-center gap-y-6"
+					className="w-full min-[900px]:w-2/3 min-[1700px]:w-2/5 h-auto flex flex-col items-center gap-y-6"
 				>
 					<h1 className="text-orange-500 dark:text-[#FFA500] font-bold text-xl mb-6 self-start">
 						{dict.contact.title}

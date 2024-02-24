@@ -13,7 +13,7 @@ export function TextInput({
 }: TextInputProps) {
 	return (
 		<div className="flex w-full items-center justify-center">
-			<div className="relative w-full lg:w-1/3">
+			<div className="relative w-full">
 				<input
 					id={name}
 					name={name}
@@ -46,7 +46,7 @@ type TextareaProps = {
 export function Textarea({ name, value, OnChange }: TextareaProps) {
 	return (
 		<div className="flex w-full h-auto items-center mt-3 justify-center">
-			<div className="relative w-full lg:w-1/3">
+			<div className="relative w-full">
 				<textarea
 					id={name}
 					name={name}
