@@ -5,7 +5,7 @@ interface CardProps {
 
 export function ServiceCards({ desc, title }: CardProps) {
 	return (
-		<div className="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300">
+		<div className="service-card w-[300px] shadow-xl dark:shadow-zinc-700 cursor-pointer snap-start shrink-0 py-8 px-6 bg-white dark:bg-zinc-900 flex flex-col items-start gap-3 transition-all duration-300">
 			<svg
 				strokeLinejoin="round"
 				strokeLinecap="round"
@@ -13,7 +13,7 @@ export function ServiceCards({ desc, title }: CardProps) {
 				stroke="#292929"
 				fill="none"
 				viewBox="0 0 24 24"
-				className="text-5xl h-12 w-12 stroke-gray-300"
+				className="text-5xl h-12 w-12 stroke-gray-300 dark:stroke-gray-100"
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
@@ -21,7 +21,7 @@ export function ServiceCards({ desc, title }: CardProps) {
 				<line y2="21" x2="12" y1="17" x1="12"></line>
 			</svg>
 
-			<p className="font-bold text-2xl text-gray-300/80">
+			<p className="font-bold text-2xl text-gray-300/80 dark:text-gray-100">
 				{title}
 			</p>
 			<p className="text-gray-400 text-sm">{desc}</p>

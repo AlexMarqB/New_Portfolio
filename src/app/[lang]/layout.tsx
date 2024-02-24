@@ -7,6 +7,7 @@ import { Locale, i18n } from "@/config/i18n.config";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ToastContainer } from "react-toastify";
+import { Tprovider } from "@/contexts/tprovider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,12 +29,14 @@ export default function RootLayout({
 	params: { lang: Locale };
 }>) {
 	return (
-		<html lang={params.lang} className="scroll-smooth">
-			<body className={`${inter.className} bg-gray-100 text-gray-200`}>
-				<Header lang={params.lang} />
-				<main>{children}</main>
-				<Footer />
-				<ToastContainer autoClose={3000} />
+		<html lang={params.lang} className="scroll-smooth" suppressHydrationWarning>
+			<body className={`${inter.className} bg-gray-100 dark:bg-[#292929] text-gray-200 dark:gray-[#707070]`}>
+				<Tprovider>
+					<Header lang={params.lang} />
+					<main>{children}</main>
+					<Footer />
+					<ToastContainer autoClose={3000} />
+				</Tprovider>
 			</body>
 		</html>
 	);

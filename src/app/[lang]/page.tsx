@@ -62,7 +62,10 @@ export default function Home() {
 	};
 
 	return (
-		<div className="flex flex-col w-full min-h-screen text-black">
+		<div
+			className="flex flex-col w-full min-h-screen text-gray-300 dark:text-[#A6A6A6]"
+			id="container"
+		>
 			<section className="flex justify-around">
 				<div className=" w-full lg:w-2/3 flex items-center gap-6">
 					<Image
@@ -101,7 +104,7 @@ export default function Home() {
 			</section>
 			<section id="about" className="flex w-fit items-center justify-around">
 				<div className="flex flex-col w-full lg:w-2/3 items-start">
-					<h1 className="text-orange-500 font-bold text-xl">
+					<h1 className="text-orange-500 dark:text-[#FFA500] font-bold text-xl">
 						{dict.about.title}
 					</h1>
 					<p>{dict.about.text1}</p>
@@ -111,7 +114,7 @@ export default function Home() {
 			</section>
 			<section className="flex justify-around" id="services">
 				<div className="flex flex-col items-center gap-y-4 w-2/3">
-					<h1 className="text-orange-500 font-bold text-xl">
+					<h1 className="self-start text-orange-500 dark:text-[#FFA500] font-bold text-xl mb-6">
 						{dict.services.title}
 					</h1>
 					<div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
@@ -136,7 +139,7 @@ export default function Home() {
 			</section>
 			<section className="flex justify-around" id="projects">
 				<div className="flex flex-col items-center gap-y-4 w-2/3">
-					<h1 className="text-orange-500 font-bold text-xl mb-6">
+					<h1 className="self-start text-orange-500 dark:text-[#FFA500] font-bold text-xl mb-6">
 						{dict.projects.title}
 					</h1>
 					<div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
@@ -160,7 +163,7 @@ export default function Home() {
 					}}
 					className="w-full lg:w-2/3 h-auto flex flex-col items-center gap-y-6"
 				>
-					<h1 className="text-orange-500 font-bold text-xl mb-6 self-start">
+					<h1 className="text-orange-500 dark:text-[#FFA500] font-bold text-xl mb-6 self-start">
 						{dict.contact.title}
 					</h1>
 					<TextInput
@@ -192,8 +195,8 @@ export default function Home() {
 						disabled={error}
 						style={{ pointerEvents: error ? "none" : "auto" }}
 					>
-						<div className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-orange-500 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 dark:bg-gray-300 dark:text-white dark:hover:text-gray-100 dark:shadow-none group">
-							<span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-orange-500 group-hover:h-full"></span>
+						<div className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-orange-500 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-100 dark:bg-zinc-800 dark:text-gray-100 dark:hover:text-gray-100 dark:shadow-none group">
+							<span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-orange-500 dark:bg-[#FFA500] group-hover:h-full"></span>
 							<span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
