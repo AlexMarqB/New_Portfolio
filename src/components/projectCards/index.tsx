@@ -77,7 +77,7 @@ export function ProjectCards({
 						title="Backend repository"
 						onClick={() => window.open(brepo)}
 					>
-						<Cog />
+						API
 					</LinkButton>
 				)}
 				{mlink && (

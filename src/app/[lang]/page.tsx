@@ -5,13 +5,13 @@ import { getDictionaryUseClient } from "@/dictionaries/default-dictionaries-use-
 import { useParams } from "next/navigation";
 import Image from "next/image";
 
-import git from "../../../public/github.svg";
-import linke from "../../../public/linkedin.svg";
 import { ProjectCards } from "@/components/projectCards";
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { TextInput, Textarea } from "@/components/inputs";
 import { toast } from "react-toastify";
+import Github from "../../../public/github.tsx";
+import Linkedin from "../../../public/linkedin.tsx";
 
 export default function Home() {
 	const params = useParams<{ lang: Locale }>();
@@ -73,13 +73,7 @@ export default function Home() {
 						height={200}
 					/>
 					<div className="flex flex-col text-lg md:text-xl lg:text-2xl">
-						<h1>
-							console.log(
-							<span className="text-orange-500">
-								&quot;Hello World, {dict.about.present}&quot;
-							</span>
-							)
-						</h1>
+						<h1>Hello World, {dict.about.present}</h1>
 
 						<h2>{dict.about.role}</h2>
 						<div className="flex gap-6 mt-2">
@@ -89,11 +83,7 @@ export default function Home() {
 									window.open("https://github.com/AlexMarqB")
 								}
 							>
-								<Image
-									src={git}
-									alt="Github icon"
-									style={{ width: "100%", height: "100%" }}
-								/>
+								<Github />
 							</button>
 							<button
 								className="w-fit h-8 lg:h-10"
@@ -103,18 +93,14 @@ export default function Home() {
 									)
 								}
 							>
-								<Image
-									src={linke}
-									alt="Linkedin icon"
-									style={{ width: "100%", height: "100%" }}
-								/>
+								<Linkedin />
 							</button>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section id="about" className="flex w-fit items-center justify-around">
-				<div className="flex flex-col w-2/3 items-start">
+				<div className="flex flex-col w-full lg:w-2/3 items-start">
 					<h1 className="text-orange-500 font-bold text-xl">
 						{dict.about.title}
 					</h1>
@@ -124,11 +110,11 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="flex justify-around" id="services">
-				<div className="flex flex-col gap-y-4 w-2/3">
+				<div className="flex flex-col items-center gap-y-4 w-2/3">
 					<h1 className="text-orange-500 font-bold text-xl">
 						{dict.services.title}
 					</h1>
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
+					<div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
 						<ServiceCards
 							title={dict.services.next.title}
 							desc={dict.services.next.desc}
@@ -149,7 +135,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="flex justify-around" id="projects">
-				<div className="flex flex-col items gap-y-4 w-2/3">
+				<div className="flex flex-col items-center gap-y-4 w-2/3">
 					<h1 className="text-orange-500 font-bold text-xl mb-6">
 						{dict.projects.title}
 					</h1>
