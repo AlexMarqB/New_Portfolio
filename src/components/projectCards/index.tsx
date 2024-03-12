@@ -1,4 +1,4 @@
-import { Cog, Download, Link, ScreenShare } from "lucide-react";
+import { Link, ScreenShare, Smartphone } from "lucide-react";
 import Image from "next/image";
 import { ComponentProps } from "react";
 
@@ -83,10 +83,10 @@ export function ProjectCards({
 				{mlink && (
 					<LinkButton
 						type="button"
-						title="Mobile app"
+						title="Mobile repository"
 						onClick={() => window.open(mlink)}
 					>
-						<Download />
+						<Smartphone />
 					</LinkButton>
 				)}
 				{link && (

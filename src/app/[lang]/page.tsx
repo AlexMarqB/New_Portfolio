@@ -149,6 +149,7 @@ export default function Home() {
 							image={"/pizzaria.jpg"}
 							brepo="https://github.com/AlexMarqB/projeto_pizzaria_backend"
 							frepo="https://github.com/AlexMarqB/projeto_pizzaria_frontend_web"
+							mlink="https://github.com/AlexMarqB/projeto_pizzaria_mobile"
 							link="https://projeto-pizzaria-frontend-web.vercel.app"
 							icons={["typescript", "nodejs", "nextjs"]}
 						/>
