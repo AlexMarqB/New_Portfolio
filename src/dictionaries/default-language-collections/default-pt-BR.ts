@@ -21,7 +21,7 @@ export const ptBR = {
 			desc: "Crio websites responsivos e intuitivos com Next.js e Tailwind CSS para uma experiência de usuário agradável e excepcional.",
 		},
 		node: {
-			title: "Criação de APIs HTTP RESTful em Node.js",
+			title: "Criação de APIs HTTP RESTful em Node.js ou Java Spring Boot",
 			desc: "Construo APIs robustas e seguras em Node.js para garantir comunicação eficiente entre diferentes partes de um sistema.",
 		},
 		native: {
