@@ -12,7 +12,8 @@ export const ptBR = {
 		present: "eu sou um",
 		title: "Sobre mim",
 		text1: "Bem-vindo ao meu portfólio! Em primeiro lugar, tenho confiança em afirmar que sou um desenvolvedor web que busca se tornar o mais completo possível.",
-		text2: "Estou seguindo o stack do Typescript, com NextJS (o framework utilizado para este portfólio), NodeJS para APIs e React Native para desenvolvimento móvel nativo. Mesmo possuindo esse conhecimento, estou sempre buscando mais e mais, aprimorando minhas habilidades de clean code, arquitetura, tecnologias, frameworks, metodologias e habilidades interpessoais, buscando me tornar um desenvolvedor inteligente tanto nas soft skills quanto nas hard skills, capaz de trabalhar em equipes e, futuramente, liderá-las.",
+		text2: "Estou seguindo o stack do Typescript, c
+			om NextJS (o framework utilizado para este portfólio), NodeJS e atualmente Java com Spring Boot para APIs e React Native para desenvolvimento móvel nativo. Mesmo possuindo esse conhecimento, estou sempre buscando mais e mais, aprimorando minhas habilidades de clean code, arquitetura, tecnologias, frameworks, metodologias e habilidades interpessoais, buscando me tornar um desenvolvedor inteligente tanto nas soft skills quanto nas hard skills, capaz de trabalhar em equipes e, futuramente, liderá-las.",
 	},
 	services: {
 		title: "Serviços",
