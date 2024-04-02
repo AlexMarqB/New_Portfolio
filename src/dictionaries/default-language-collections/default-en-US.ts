@@ -21,7 +21,7 @@ export const enUS = {
 			desc: "I create responsive and intuitive websites using Next.js and Tailwind CSS for an exceptional user experience."
 		},
 		node: {
-			title: "Building RESTful HTTP APIs with Node.js",
+			title: "Building RESTful HTTP APIs with Node.js or with Java Spring Boot",
 			desc: "I build robust and secure APIs in Node.js to ensure efficient communication between different parts of a system."
 		},
 		native: {
