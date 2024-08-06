@@ -5,7 +5,6 @@ import { ComponentProps } from "react";
 interface CardProps {
 	title: string;
 	desc: string;
-	image?: string;
 	frepo?: string;
 	brepo?: string;
 	link?: string;
@@ -27,7 +26,6 @@ function LinkButton(props: buttonProps) {
 export function ProjectCards({
 	title,
 	desc,
-	image,
 	frepo,
 	brepo,
 	link,
@@ -35,12 +33,7 @@ export function ProjectCards({
 	icons,
 }: CardProps) {
 	return (
-		<div className="relative flex w-96 flex-col rounded-xl bg-white dark:bg-zinc-900 bg-clip-border text-gray-300 shadow-md dark:shadow-zinc-700">
-			<div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-orange-400 to-orange-500">
-				{image && (
-					<Image src={image} alt={title} width={500} height={300} />
-				)}
-			</div>
+		<div className="relative flex w-96 flex-col rounded-xl bg-white dark:bg-zinc-900 bg-clip-border text-gray-300 shadow-md dark:shadow-zinc-800">
 			<div className="p-5">
 				<h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-gray-900 dark:text-gray-100 antialiased">
 					{title}

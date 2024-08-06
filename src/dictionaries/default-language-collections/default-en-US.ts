@@ -3,7 +3,7 @@ export const enUS = {
 		title: "Web_Developer",
 		button: "Language",
 		op1: "About Me",
-		op2: "Services",
+		op2: "Stacks",
 		op3: "Projects",
 		op4: "Contact Me",
 	},
@@ -15,23 +15,23 @@ export const enUS = {
 		text2: "I'm following the TypeScript stack, with NextJS (the framework used for this portfolio), NodeJS and currently Java with Spring Boot for APIs, and React Native for native mobile development. Even though I have this knowledge, I'm always seeking more and more, honing my clean code skills, architecture, technologies, frameworks, methodologies, and interpersonal skills, aiming to become a smart developer in both soft and hard skills, capable of working in teams and, eventually, leading them."
 	},
 	services: {
-		title: "Services",
+		title: "Stacks",
 		next: {
-			title: "Responsive Web Development with Next.js",
+			title: "Next.js",
 			desc: "I create responsive and intuitive websites using Next.js and Tailwind CSS for an exceptional user experience."
 		},
 		node: {
-			title: "Building RESTful HTTP APIs with Node.js or with Java Spring Boot",
+			title: "Node.js",
 			desc: "I build robust and secure APIs in Node.js to ensure efficient communication between different parts of a system."
 		},
 		native: {
-			title: "Native App Development with React Native",
+			title: "React Native",
 			desc: "I develop native applications with React Native, combining exceptional performance with an intuitive interface."
-		},
-		tutoring: {
-			title: "Dynamic Classes on TypeScript and its Frameworks",
-			desc: "I offer comprehensive classes that cover the basics of JavaScript, HTML, and CSS, up to advanced topics with frameworks and TypeScript."
-		}		
+		},	
+		spring: {
+			title: "Spring Boot",
+			desc: "I create fast, robust, and secure APIs with Java and Spring Boot to ensure the max system efficiency."
+		}	
 	  },
 	  projects: {
 		title: "Projects",

@@ -117,7 +117,7 @@ export default function Home() {
 					<h1 className="self-start text-orange-500 dark:text-[#FFA500] font-bold text-xl mb-6">
 						{dict.services.title}
 					</h1>
-					<div className="flex flex-col min-[910px]:grid min-[910px]:grid-cols-2 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
+					<div className="flex flex-col min-[910px]:grid min-[910px]:grid-cols-2 min-[1350px]:grid-cols-3 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
 						<ServiceCards
 							title={dict.services.next.title}
 							desc={dict.services.next.desc}
@@ -131,8 +131,8 @@ export default function Home() {
 							desc={dict.services.native.desc}
 						/>
 						<ServiceCards
-							title={dict.services.tutoring.title}
-							desc={dict.services.tutoring.desc}
+						title={dict.services.spring.title}
+						desc={dict.services.spring.desc}
 						/>
 					</div>
 				</div>
@@ -146,12 +146,11 @@ export default function Home() {
 						<ProjectCards
 							title={dict.projects.pizza.title}
 							desc={dict.projects.pizza.desc}
-							image={"/pizzaria.jpg"}
 							brepo="https://github.com/AlexMarqB/projeto_pizzaria_backend"
 							frepo="https://github.com/AlexMarqB/projeto_pizzaria_frontend_web"
 							mlink="https://github.com/AlexMarqB/projeto_pizzaria_mobile"
 							link="https://projeto-pizzaria-frontend-web.vercel.app"
-							icons={["typescript", "nodejs", "nextjs"]}
+							icons={["typescript", "nodejs", "nextjs", "reactnative"]}
 						/>
 					</div>
 				</div>

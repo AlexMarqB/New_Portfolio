@@ -25,6 +25,17 @@ export function Footer() {
                     +55 16 9 9761-5881
                 </span>
             </h1>
+            <h1 className="text-gray-300 dark:text-gray-100">
+                CNPJ:{" "}
+                <span
+                    className="text-orange-500 dark:text-[#FFA500] hover:cursor-pointer underline"
+                    onClick={() =>
+                        navigator.clipboard.writeText("55.076.513/0001-42")
+                    }
+                >
+                    55.076.513/0001-42
+                </span>
+            </h1>
         </footer>
     );
 }
