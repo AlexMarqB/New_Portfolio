@@ -39,6 +39,10 @@ export const ptBR = {
 			title: "Sistema de Pizzaria",
 			desc: "Simulando um sistema de pizzaria para aprender mais sobre APIs e suas conexões com o frontend.",
 		},
+		login: {
+			title: "Sistema de Login",
+			desc: "Um sistema de login utilizando Spring Boot, Spring Security e tokens JWT."
+		  }
 	},
 	contact: {
 		title: "Entre me contato",

@@ -38,7 +38,11 @@ export const enUS = {
 		pizza: {
 			title: "Pizzeria system",
 			desc: "Simulating a pizzeria system to learn more about APIs and their connections to the frontend."
-		}
+		},
+		login: {
+			title: "Login System",
+			desc: "A login system utilizing Spring Boot, Spring Security, and JWT tokens."
+		  }		  
 	  },
 	  contact: {
 		title: "Contact",

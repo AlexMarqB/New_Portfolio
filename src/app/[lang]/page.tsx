@@ -152,6 +152,12 @@ export default function Home() {
 							link="https://projeto-pizzaria-frontend-web.vercel.app"
 							icons={["typescript", "nodejs", "nextjs", "reactnative"]}
 						/>
+						<ProjectCards
+							title={dict.projects.login.title}
+							desc={dict.projects.login.desc}
+							brepo="https://github.com/AlexMarqB/Login_API_Spring_boot"
+							icons={["java", "springboot", "springsecurity", "jwt"]}
+						/>
 					</div>
 				</div>
 			</section>
