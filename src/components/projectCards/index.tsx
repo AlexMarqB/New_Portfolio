@@ -1,10 +1,11 @@
 import { Link, ScreenShare, Smartphone } from "lucide-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ComponentProps } from "react";
 
 interface CardProps {
 	title: string;
 	desc: string;
+	image?: StaticImageData; // Adicionada prop para imagem
 	frepo?: string;
 	brepo?: string;
 	link?: string;
@@ -12,12 +13,17 @@ interface CardProps {
 	icons: string[];
 }
 
-type buttonProps = ComponentProps<"button">;
+type ButtonProps = ComponentProps<"button">;
 
-function LinkButton(props: buttonProps) {
+function LinkButton(props: ButtonProps) {
 	return (
 		<button
-			className="select-none rounded-lg bg-orange-500 dark:bg-[#FFA500] py-3 px-6 text-center align-middle items-center font-sans text-sm lg:text-xs font-bold uppercase text-gray-300 shadow-md shadow-gray-500/20 transition-all hover:shadow-lg hover:shadow-gray-500/40 hover:scale-110 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+			className="select-none rounded-lg bg-orange-500 dark:bg-[#FFA500] py-3 px-6 text-center align-middle items-center font-sans text-sm lg:text-xs font-bold uppercase text-gray-300 shadow-lg
+			  shadow-gray-500/30
+			  transition-transform
+			  transform
+			  hover:shadow-xl
+			  dark:hover:shadow-[#FFA500]/40"
 			{...props}
 		/>
 	);
@@ -26,6 +32,7 @@ function LinkButton(props: buttonProps) {
 export function ProjectCards({
 	title,
 	desc,
+	image, // Recebendo a imagem como prop
 	frepo,
 	brepo,
 	link,
@@ -33,8 +40,21 @@ export function ProjectCards({
 	icons,
 }: CardProps) {
 	return (
-		<div className="relative flex w-96 flex-col rounded-xl bg-white dark:bg-zinc-900 bg-clip-border text-gray-300 shadow-md dark:shadow-zinc-800">
-			<div className="p-5">
+		<div className="relative flex flex-col mt-6 w-96 rounded-xl bg-white dark:bg-zinc-900 bg-clip-border text-gray-300 shadow-md dark:shadow-zinc-800">
+			{/* Imagem do Card */}
+			{image && (
+				<div className="relative h-56 mx-4 -mt-6 overflow-hidden rounded-xl shadow-lg bg-blue-gray-500 shadow-blue-gray-500/40">
+					<Image
+						src={image} // Utilizando a prop de imagem
+						alt="card-image"
+						layout="fill"
+						objectFit="cover"
+					/>
+				</div>
+			)}
+
+			{/* Conteúdo do Card */}
+			<div className="p-6">
 				<h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-gray-900 dark:text-gray-100 antialiased">
 					{title}
 				</h5>
@@ -42,18 +62,42 @@ export function ProjectCards({
 					{desc}
 				</p>
 			</div>
+
+			{/* Ícones do Card */}
 			{icons.length > 0 && (
 				<div className="flex w-full p-4 pt-0 gap-2 text-orange-500 dark:text-[#FFA500] text-2xl">
 					{icons.map((item, index) => (
 						<div
 							key={index}
-							className="select-none rounded-lg border border-orange-500 dark:border-[#FFA500] w-fit h-fit p-1 text-center text-orange-500 dark:text-[#FFA500] align-middle items-center font-sans text-sm font-medium uppercase shadow-md shadow-blue-500/20 "
+							className="
+			  select-none
+			  rounded-lg
+			  border
+			  border-orange-500
+			  dark:border-[#FFA500]
+			  bg-white
+			  dark:bg-gray-300
+			  w-fit
+			  h-fit
+			  p-2
+			  text-center
+			  text-orange-500
+			  dark:text-[#FFA500]
+			  font-sans
+			  text-sm
+			  font-medium
+			  uppercase
+			  shadow-lg
+			  shadow-gray-500/30
+			"
 						>
 							{item}
 						</div>
 					))}
 				</div>
 			)}
+
+			{/* Botões de Ação */}
 			<div className="flex w-full justify-around py-4">
 				{frepo && (
 					<LinkButton

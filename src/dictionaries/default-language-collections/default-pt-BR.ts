@@ -27,22 +27,14 @@ export const ptBR = {
 		native: {
 			title: "React Native",
 			desc: "Desenvolvo aplicativos nativos com React Native com performance excepcional e interface intuitiva e conectividade de ponta.",
-		},
-		spring: {
-			title: "Spring Boot",
-			desc: "Construo APIs robustas e seguras utilizando Java e seu framework Spring Boot para garantir eficiencia em todo o sistema."
 		}
 	},
 	projects: {
-		title: "Projects",
+		title: "Projetos",
 		pizza: {
 			title: "Sistema de Pizzaria",
 			desc: "Simulando um sistema de pizzaria para aprender mais sobre APIs e suas conexões com o frontend.",
-		},
-		login: {
-			title: "Sistema de Login",
-			desc: "Um sistema de login utilizando Spring Boot, Spring Security e tokens JWT."
-		  }
+		}
 	},
 	contact: {
 		title: "Entre me contato",

@@ -4,6 +4,7 @@ import { Locale } from "@/config/i18n.config";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionaries-use-client";
 import { useParams } from "next/navigation";
 import Image from "next/image";
+import pizzaria from '../../../public/projeto_pizzaria.png'
 
 import { ProjectCards } from "@/components/projectCards";
 import { useEffect, useState } from "react";
@@ -117,7 +118,7 @@ export default function Home() {
 					<h1 className="self-start text-orange-500 dark:text-[#FFA500] font-bold text-xl mb-6">
 						{dict.services.title}
 					</h1>
-					<div className="flex flex-col min-[910px]:grid min-[910px]:grid-cols-2 min-[1350px]:grid-cols-3 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
+					<div className="flex flex-col min-[910px]:grid min-[910px]:grid-cols-3 min-[1350px]:grid-cols-3 gap-10 md:gap-14 xl:gap-28 w-fit justify-center items-center self-center">
 						<ServiceCards
 							title={dict.services.next.title}
 							desc={dict.services.next.desc}
@@ -129,10 +130,6 @@ export default function Home() {
 						<ServiceCards
 							title={dict.services.native.title}
 							desc={dict.services.native.desc}
-						/>
-						<ServiceCards
-						title={dict.services.spring.title}
-						desc={dict.services.spring.desc}
 						/>
 					</div>
 				</div>
@@ -146,17 +143,12 @@ export default function Home() {
 						<ProjectCards
 							title={dict.projects.pizza.title}
 							desc={dict.projects.pizza.desc}
+							image={pizzaria}
 							brepo="https://github.com/AlexMarqB/projeto_pizzaria_backend"
 							frepo="https://github.com/AlexMarqB/projeto_pizzaria_frontend_web"
 							mlink="https://github.com/AlexMarqB/projeto_pizzaria_mobile"
 							link="https://projeto-pizzaria-frontend-web.vercel.app"
 							icons={["typescript", "nodejs", "nextjs", "reactnative"]}
-						/>
-						<ProjectCards
-							title={dict.projects.login.title}
-							desc={dict.projects.login.desc}
-							brepo="https://github.com/AlexMarqB/Login_API_Spring_boot"
-							icons={["java", "springboot", "springsecurity", "jwt"]}
 						/>
 					</div>
 				</div>
@@ -195,8 +187,8 @@ export default function Home() {
 						</span>
 					)}
 					<button
-						className="`w-full flex items-center justify-center cursor-pointer disabled:opacity-50 
-              ${error ? '' : 'group-hover:opacity-100'}`"
+						className={`w-full flex items-center justify-center cursor-pointer disabled:opacity-50 
+              ${error ? '' : 'group-hover:opacity-100'}`}
 						type="submit"
 						disabled={error}
 						style={{ pointerEvents: error ? "none" : "auto" }}

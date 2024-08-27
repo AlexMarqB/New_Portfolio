@@ -27,10 +27,6 @@ export const enUS = {
 		native: {
 			title: "React Native",
 			desc: "I develop native applications with React Native, combining exceptional performance with an intuitive interface."
-		},	
-		spring: {
-			title: "Spring Boot",
-			desc: "I create fast, robust, and secure APIs with Java and Spring Boot to ensure the max system efficiency."
 		}	
 	  },
 	  projects: {
@@ -38,11 +34,7 @@ export const enUS = {
 		pizza: {
 			title: "Pizzeria system",
 			desc: "Simulating a pizzeria system to learn more about APIs and their connections to the frontend."
-		},
-		login: {
-			title: "Login System",
-			desc: "A login system utilizing Spring Boot, Spring Security, and JWT tokens."
-		  }		  
+		}	  
 	  },
 	  contact: {
 		title: "Contact",
