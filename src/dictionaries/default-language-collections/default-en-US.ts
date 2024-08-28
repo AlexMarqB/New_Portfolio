@@ -12,7 +12,7 @@ export const enUS = {
 		present: "I am a",
 		title: "About me",
 		text1: "Welcome to my portfolio! First and foremost, I'm confident in stating that I'm a web developer striving to become as comprehensive as possible.",
-		text2: "I'm following the TypeScript stack, with NextJS (the framework used for this portfolio), NodeJS and currently Java with Spring Boot for APIs, and React Native for native mobile development. Even though I have this knowledge, I'm always seeking more and more, honing my clean code skills, architecture, technologies, frameworks, methodologies, and interpersonal skills, aiming to become a smart developer in both soft and hard skills, capable of working in teams and, eventually, leading them."
+		text2: "I'm following the TypeScript stack, with NextJS (the framework used for this portfolio), NodeJS for APIs, PostgreSQL or Oracle for databases and React Native for native mobile development. Even though I have this knowledge, I'm always seeking more and more, honing my clean code skills, architecture, technologies, frameworks, methodologies, and interpersonal skills, aiming to become a smart developer in both soft and hard skills, capable of working in teams and, eventually, leading them."
 	},
 	services: {
 		title: "Stacks",
