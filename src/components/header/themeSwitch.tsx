@@ -8,7 +8,7 @@ export function ThemeSwitch() {
 	const [isMounted, setMounted] = useState(false)
 	const { setTheme, resolvedTheme } = useTheme();
 
-	useEffect(() => setMounted(true));
+	useEffect(() => setMounted(true), []);
 
 	if(!isMounted) {
 		return <div className=" justify-center items-center cursor-pointer" onClick={() => setTheme('light')}><Sun /></div>;
