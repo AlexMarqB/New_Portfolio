@@ -40,7 +40,7 @@ export function ProjectCards({
 	icons,
 }: CardProps) {
 	return (
-		<div className="relative flex flex-col mt-6 w-96 rounded-xl bg-white dark:bg-zinc-900 bg-clip-border text-gray-300 shadow-md dark:shadow-zinc-800">
+		<div className="relative flex flex-col mt-6 w-auto rounded-xl bg-white dark:bg-zinc-900 bg-clip-border text-gray-300 shadow-md dark:shadow-zinc-800">
 			{/* Imagem do Card */}
 			{image && (
 				<div className="relative h-56 mx-4 -mt-6 overflow-hidden rounded-xl shadow-lg bg-blue-gray-500 shadow-blue-gray-500/40">

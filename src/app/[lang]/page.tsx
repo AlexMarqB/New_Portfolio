@@ -5,6 +5,7 @@ import { getDictionaryUseClient } from "@/dictionaries/default-dictionaries-use-
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import pizzaria from '../../../public/projeto_pizzaria.png'
+import apiSolid from '../../../public/api_solid.png'
 
 import { ProjectCards } from "@/components/projectCards";
 import { useEffect, useState } from "react";
@@ -149,6 +150,13 @@ export default function Home() {
 							mlink="https://github.com/AlexMarqB/projeto_pizzaria_mobile"
 							link="https://projeto-pizzaria-frontend-web.vercel.app"
 							icons={["typescript", "nodejs", "nextjs", "reactnative"]}
+						/>
+						<ProjectCards
+							title={dict.projects.solid_api.title}
+							desc={dict.projects.solid_api.desc}
+							image={apiSolid}
+							brepo="https://github.com/AlexMarqB/api_rest_solid"
+							icons={["typescript", "nodejs", "fastify", "prisma"]}
 						/>
 					</div>
 				</div>

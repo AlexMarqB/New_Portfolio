@@ -34,6 +34,10 @@ export const ptBR = {
 		pizza: {
 			title: "Sistema de Pizzaria",
 			desc: "Simulando um sistema de pizzaria para aprender mais sobre APIs e suas conexões com o frontend.",
+		},
+		solid_api: {
+			title: "API SOLID NodeJS",
+			desc: "API desenvolvida com os principios SOLID, TDD, Clean Architecture, Dependency Injection, e ORM."
 		}
 	},
 	contact: {

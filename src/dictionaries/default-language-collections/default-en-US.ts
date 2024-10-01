@@ -34,7 +34,11 @@ export const enUS = {
 		pizza: {
 			title: "Pizzeria system",
 			desc: "Simulating a pizzeria system to learn more about APIs and their connections to the frontend."
-		}	  
+		},
+		solid_api: {
+			title: "SOLID NodeJS API",
+			desc: "API developed with SOLID principles, TDD, Clean Architecture, Dependency Injection, and ORM."
+		}
 	  },
 	  contact: {
 		title: "Contact",
