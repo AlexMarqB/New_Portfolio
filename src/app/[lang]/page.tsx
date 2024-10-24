@@ -158,6 +158,13 @@ export default function Home() {
 							brepo="https://github.com/AlexMarqB/api_rest_solid"
 							icons={["typescript", "nodejs", "fastify", "prisma"]}
 						/>
+						<ProjectCards
+							title={dict.projects.find_friend.title}
+							desc={dict.projects.find_friend.desc}
+							image={apiSolid}
+							brepo="https://github.com/AlexMarqB/find_friend"
+							icons={["typescript", "nodejs", "fastify", "prisma"]}
+						/>
 					</div>
 				</div>
 			</section>

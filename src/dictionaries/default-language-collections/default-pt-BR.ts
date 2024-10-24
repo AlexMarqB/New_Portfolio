@@ -38,6 +38,10 @@ export const ptBR = {
 		solid_api: {
 			title: "API SOLID NodeJS",
 			desc: "API desenvolvida com os principios SOLID, TDD, Clean Architecture, Dependency Injection, e ORM."
+		},
+		find_friend: {
+			title: "Find a Friend",
+			desc: "Uma rede social para encontrar pets para adoção com diferentes filtros, sendo o principal a cidade."
 		}
 	},
 	contact: {

@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const enUS = {
 	header: {
 		title: "Web_Developer",
@@ -38,6 +40,10 @@ export const enUS = {
 		solid_api: {
 			title: "SOLID NodeJS API",
 			desc: "API developed with SOLID principles, TDD, Clean Architecture, Dependency Injection, and ORM."
+		},
+		find_friend: {
+			title: "Find a Friend",
+			desc: "A social network for finding pets to adopt with different filters beeing the main one the city."
 		}
 	  },
 	  contact: {
