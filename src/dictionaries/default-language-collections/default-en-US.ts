@@ -41,6 +41,10 @@ export const enUS = {
 			title: "SOLID NodeJS API",
 			desc: "API developed with SOLID principles, TDD, Clean Architecture, Dependency Injection, and ORM."
 		},
+		daily_diet: {
+			title: "Daily Diet app",
+			desc: "An app to help you control your daily diet."
+		},
 		find_friend: {
 			title: "Find a Friend",
 			desc: "A social network for finding pets to adopt with different filters beeing the main one the city."

@@ -6,6 +6,8 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import pizzaria from '../../../public/projeto_pizzaria.png'
 import apiSolid from '../../../public/api_solid.png'
+import dailyDiet from '../../../public/daily_diet.png'
+import findFriend from '../../../public/find_friend.png'
 
 import { ProjectCards } from "@/components/projectCards";
 import { useEffect, useState } from "react";
@@ -158,10 +160,17 @@ export default function Home() {
 							brepo="https://github.com/AlexMarqB/api_rest_solid"
 							icons={["typescript", "nodejs", "fastify", "prisma"]}
 						/>
+						<ProjectCards 
+							title={dict.projects.daily_diet.title}
+							desc={dict.projects.daily_diet.desc}
+							image={dailyDiet}
+							brepo="https://github.com/AlexMarqB/daily_diet"
+							icons={["typescript", "nodejs", "fastify", "prisma"]}
+						/>
 						<ProjectCards
 							title={dict.projects.find_friend.title}
 							desc={dict.projects.find_friend.desc}
-							image={apiSolid}
+							image={findFriend}
 							brepo="https://github.com/AlexMarqB/find_friend"
 							icons={["typescript", "nodejs", "fastify", "prisma"]}
 						/>
