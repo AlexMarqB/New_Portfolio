@@ -48,6 +48,9 @@ export const ptBR = {
 			desc: "Uma rede social para encontrar pets para adoção com diferentes filtros, sendo o principal a cidade."
 		}
 	},
+	footer: {
+		text: 'Todos os direitos reservados',
+	  },
 	contact: {
 		title: "Entre me contato",
 		stoast: "Email enviado com sucesso",
@@ -58,5 +61,8 @@ export const ptBR = {
 			error: "Preencha todos os campos",
 			button: "Enviar"
 				}
-	  }
+	},
+	toast: {
+		copied: "Copiado para a área de transferência",
+	}
 };

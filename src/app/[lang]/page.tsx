@@ -10,12 +10,14 @@ import dailyDiet from '../../../public/daily_diet.png'
 import findFriend from '../../../public/find_friend.png'
 
 import { ProjectCards } from "@/components/projectCards";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { TextInput, Textarea } from "@/components/inputs";
 import { toast } from "react-toastify";
 import Github from "../../../public/github.tsx";
 import Linkedin from "../../../public/linkedin.tsx";
+import Mail from "../../../public/mail.tsx";
+import Phone from "../../../public/phone.tsx";
 
 export default function Home() {
 	const params = useParams<{ lang: Locale }>();
@@ -101,6 +103,28 @@ export default function Home() {
 								}
 							>
 								<Linkedin />
+							</button>
+							<button
+								className="w-fit h-8 lg:h-10"
+								onClick={() =>
+									{
+										navigator.clipboard.writeText("beraldoalex07@gmail.com")
+										toast.success(dict.toast.copied)
+									}
+								}
+							>
+								<Mail />
+							</button>
+							<button
+								className="w-fit h-8 lg:h-10"
+								onClick={() =>
+								{
+									navigator.clipboard.writeText("+55 16 9 9761-5881")
+									toast.success(dict.toast.copied)
+								}
+								}
+							>
+								<Phone />
 							</button>
 						</div>
 					</div>

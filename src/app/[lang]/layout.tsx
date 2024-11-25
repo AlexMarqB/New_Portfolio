@@ -34,7 +34,7 @@ export default function RootLayout({
 				<Tprovider>
 					<Header lang={params.lang} />
 					<main>{children}</main>
-					<Footer />
+					<Footer lang={params.lang}/>
 					<ToastContainer autoClose={3000} />
 				</Tprovider>
 			</body>

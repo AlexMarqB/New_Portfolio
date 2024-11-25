@@ -50,6 +50,9 @@ export const enUS = {
 			desc: "A social network for finding pets to adopt with different filters beeing the main one the city."
 		}
 	  },
+	  footer: {
+		text: 'All rights reserved',
+	  },
 	  contact: {
 		title: "Contact",
 		stoast: "Email sent successfully",
@@ -60,6 +63,8 @@ export const enUS = {
 			error: "Fill in all fields",
 			button: "Send"
 				}
-	  }
-	  
+	},
+	toast: {
+		copied: "Copied to clipboard",
+	}
 };
