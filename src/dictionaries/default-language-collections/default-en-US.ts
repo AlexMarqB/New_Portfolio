@@ -54,7 +54,7 @@ export const enUS = {
 		text: 'All rights reserved',
 	  },
 	  contact: {
-		title: "Contact",
+		title: "Contact me",
 		stoast: "Email sent successfully",
 		ftoast: "Error sending email",
 		labels: {

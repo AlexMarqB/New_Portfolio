@@ -52,7 +52,7 @@ export const ptBR = {
 		text: 'Todos os direitos reservados',
 	  },
 	contact: {
-		title: "Entre me contato",
+		title: "Entre em contato",
 		stoast: "Email enviado com sucesso",
 		ftoast: "Erro enviando email",
 		labels: {
